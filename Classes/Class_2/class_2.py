@@ -28,6 +28,6 @@ print("Room's volume is", volume, "m cubed")
 
 #Uzrakstiet programmu, kas noprasa temperatūru pēc Celsija un izdrukā šo temperatūru pēc Farenheita skalas.
 #farenheit = 32+celsium*(9/5)
-temp = float(input("What is the temperature in Celsius? "))
+temp = float(input("Temperature in Celsius?"))
 farenheit = 32 + temp*(9/5)
 print(farenheit)
