@@ -3,6 +3,12 @@
 # Ja no 35 līdz 37 (ieskaitot), izvadiet "viss kārtībā"
 # Ja ir pāri 37, tad izvadiet "iespējams drudzis"
 
+print ("alus " *3)
+
+food=1
+
+print (type("food"))
+
 
 temperature = float (input("What's your temperature?"))
 
