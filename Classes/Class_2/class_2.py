@@ -19,11 +19,11 @@ print (f"In {year} you will be 100 years old 🙌")
 #Uzrāda cik liels būs telpas tilpums
 
 
-width = float(input("Room's width? "))
-length = float(input("Room's length? "))
-height = float(input("Room's height? "))
-room = str((length * width * height))
-print("Room's volume is", room)
+width = float(input("Room's width (in meters)? "))
+length = float(input("Room's length (in meters)? "))
+height = float(input("Room's height (in meters)? "))
+volume = str((length * width * height))
+print("Room's volume is", volume, "m cubed")  
 
 
 #Uzrakstiet programmu, kas noprasa temperatūru pēc Celsija un izdrukā šo temperatūru pēc Farenheita skalas.
