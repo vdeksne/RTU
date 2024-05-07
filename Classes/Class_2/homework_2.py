@@ -28,6 +28,8 @@ salary = int(input("What's your salary?"))
 seniority = int(input("How many years have you worked for your company?"))
 bonus = int(salary * 0.15 * (seniority-2))
 
+# atsevišķi likt 0.15 un 2 ar nozīmi min-seniority un bonus_percentage 
+
 
 # Izvadiet bonusu.
 
