@@ -12,3 +12,5 @@ print (3.14 == "Valdis")
 
 print ("4 > 5", 4 > 5)
 print ("4 < 5", 4 < 5)
+
+# /Applications/Python 3.12

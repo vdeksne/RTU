@@ -24,9 +24,11 @@ else:
 
 # Uzdevums. Noprasiet lietotājam mēneša algas apjomu un nostrādāto gadu skaitu.
 
+min_seniority = 2
+bonus_rate = 0.15
 salary = int(input("What's your salary?"))
 seniority = int(input("How many years have you worked for your company?"))
-bonus = int(salary * 0.15 * (seniority-2))
+bonus = int(salary * bonus_rate * (seniority-min_seniority))
 
 # atsevišķi likt 0.15 un 2 ar nozīmi min-seniority un bonus_percentage 
 
@@ -36,7 +38,7 @@ bonus = int(salary * 0.15 * (seniority-2))
 if seniority <= 2:
      print("better luck next year")
 else:
-    print("Your bonus this year is ", bonus)
+    print("your bonus this year is ", bonus)
 
 
 # Piemērs 5 gadu stāžs, 1000 Eiro alga, bonuss būs 450 Eiro.
@@ -49,23 +51,38 @@ c = int(input("Enter the third number "))
 
 
 # Sort the numbers using nested if-elif-else based on the description
-if a > b and a > c:  # a is the largest
-    if b > c:
-        print(a, b, c)  # a, b, c
-    else:
-        print(a, c, b)  # a, c, b
-elif b > a and b > c:  # b is the largest
-    if a > c:
-        print(b, a, c)  # b, a, c
-    else:
-        print(b, c, a)  # b, c, a
-else:  # c must be the largest
-    if a > b:
-        print(c, a, b)  # c, a, b
-    else:
-        print(c, b, a)  # c, b, a
+
+
+if a >= b >= c:  # a is the largest
+    print(a, b, c)  # a, b, c
+elif a >= c >= b:
+    print(a, c, b)  # a, c, b
+elif b >= a >= c:  # b is the largest
+    print(b, a, c)  # b, a, c
+elif b >= c >= a:
+    print(b, c, a)  # b, c, a
+elif c >= a >= b:
+    print(c, a, b)  # c, a, b
+else: #could write elif c >= b >= a
+    print(c, b, a)  # c, b, a
 
 
 # Piezīme: pagaidām šo uzdevumu risinam tikai ar if, elif, else darbībām
 
 # Pastāv arī risinājums izmantojot kārtošanu un list struktūru, kuru vēl neesam skatījuši.
+
+# if a > b and a > c:  # a is the largest
+#     if b > c:
+#         print(a, b, c)  # a, b, c
+#     else:
+#         print(a, c, b)  # a, c, b
+# elif b > a and b > c:  # b is the largest
+#     if a > c:
+#         print(b, a, c)  # b, a, c
+#     else:
+#         print(b, c, a)  # b, c, a
+# else:  # c must be the largest
+#     if a > b:
+#         print(c, a, b)  # c, a, b
+#     else:
+#         print(c, b, a)  # c, b, a
