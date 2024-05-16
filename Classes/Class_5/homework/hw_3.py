@@ -22,9 +22,10 @@ def is_prime(n):
             return False
     return True
 
+n = int(input("Ievadiet cik pirmos pirmskaitļus gribat redzēt: "))
 primes = []
 num = 2
-while len(primes) < 20:
+while len(primes) < n:
     if is_prime(num):
         primes.append(num)
     num += 1
