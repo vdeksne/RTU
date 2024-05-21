@@ -13,6 +13,7 @@
 #Var būt arī risinājums ar Counter but tas galīgi nav obligāti, lai gan ir ļoti eleganti :)
 
 def get_char_count(text):
+    text = str(text)
     char_count = {}
     for char in text:
         if char in char_count:
